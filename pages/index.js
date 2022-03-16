@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Hero from '../components/Hero'
 import Header from '../components/Header'
 
-export default function Home() {
+export default function Home({ exploreData }) {
+
   return (
     <div className="">
       <Head>
@@ -12,7 +13,33 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
+
+      <main className='max-w-7xl mx-auto px-8 sm:px-16'>
+        <section>
+          <h2 className='text-4xl font-semibold pb-5'>Inspiration for your next trip</h2>
+          
+          {exploreData?.map(item => {
+            return <h1>{item.location}</h1>
+          })}
+
+        </section>
+      </main>
      
     </div>
   )
+}
+
+//Happens when client request hits server, before page data is sent back to client, then data is passed to components as props
+export async function getStaticProps() {
+
+  const exploreData = await fetch('https://airbnb-32bf6-default-rtdb.firebaseio.com/locations.json')
+  .then(res => res.json());
+  console.log(exploreData)
+  //Gets passed to the Home component after build as props
+  return {
+    props: {
+      exploreData
+    }
+  }
+
 }
