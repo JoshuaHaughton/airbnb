@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
+import LargeCard from "../components/LargeCard";
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -41,8 +42,14 @@ export default function Home({ exploreData, cardsData }) {
               <MediumCard key={img} img={img} title={title} />
               ))}
           </div>
-
         </section>
+
+        <LargeCard
+          img='https://links.papareact.com/4cj'
+          title='The Greatest Outdoors'
+          description="Wishlists curated by Airbnb"
+          buttonText='Get Inspired'
+        />
       </main>
     </div>
   );
