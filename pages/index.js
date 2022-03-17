@@ -2,8 +2,9 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
+import MediumCard from "../components/MediumCard";
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
@@ -30,6 +31,16 @@ export default function Home({ exploreData }) {
               />
             ))}
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+
+          <div className="flex space-x-3 overflow-scroll">
+            {cardsData?.map(({ img, title }) => (
+              <MediumCard key={img} img={img} title={title} />
+              ))}
+          </div>
 
         </section>
       </main>
@@ -43,10 +54,17 @@ export async function getStaticProps() {
     "https://airbnb-32bf6-default-rtdb.firebaseio.com/locations.json",
   ).then((res) => res.json());
   console.log(exploreData);
+
+  const cardsData = await fetch('https://airbnb-32bf6-default-rtdb.firebaseio.com/mediumCard.json')
+  .then(res => res.json());
+  console.log(cardsData)
+
+
   //Gets passed to the Home component after build as props
   return {
     props: {
       exploreData,
+      cardsData
     },
   };
 }
