@@ -13,12 +13,13 @@ const Header = () => {
   const selectionRange = {
     startDate,
     endDate,
-    key: 'Selection'
+    key: 'selection'
   }
 
-  // const handleSelect = (ranges) => {
-
-  // }
+  const handleSelect = (ranges) => {
+    setStartDate(ranges.selection.startDate);
+    setEndDate(ranges.selection.endDate)
+  }
 
   return (
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -54,7 +55,7 @@ const Header = () => {
       </div>
 
       {searchInput &&
-      <div>
+      <div className="flex flex-col col-span-3 mx-auto">
         <DateRangePicker ranges={[selectionRange]}
         minDate={new Date()}
         rangeColors={['#FD5B61']}
