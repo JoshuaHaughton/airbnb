@@ -6,6 +6,7 @@ const LargeCard = ({ img, title, description, buttonText }) => {
     <section className='relative my-16 cursor-pointer'>
       <div className='relative h-96 min-w-[300px]'>
         <Image src={img}
+        alt="Large Card Image"
         layout='fill' objectFit='cover' className='rounded-2xl'/>
       </div>
 
