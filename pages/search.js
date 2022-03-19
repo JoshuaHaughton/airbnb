@@ -21,7 +21,7 @@ const Search = ({ searchResults }) => {
       />
 
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
+        <section className="py-14 px-8 flex-grow">
           <p className="text-xs">
             300+ Stays - {range} - for {numberOfGuests} guest
             {numberOfGuests > 1 && `s`}
