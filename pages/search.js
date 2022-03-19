@@ -27,11 +27,11 @@ const Search = ({ searchResults }) => {
             {numberOfGuests > 1 && `s`}
           </p>
 
-          <h1 className="text-3xl font-semibold mt-2 mb-6">
+          <h1 className="mt-2 mb-6 text-3xl font-semibold">
             Stays in {location}
           </h1>
 
-          <div className="hidden md:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
+          <div className="hidden md:inline-flex space-x-3 py-5 text-gray-800 whitespace-nowrap">
             <p className="button">Cancellation Flexibility</p>
             <p className="button">Type of Place</p>
             <p className="button">Price</p>

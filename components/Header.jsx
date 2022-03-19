@@ -69,7 +69,7 @@ const Header = ({ placeholder }) => {
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" />
+        <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2" onClick={search}/>
       </div>
 
       <div className="flex items-center space-x-4 justify-end text-gray-500">

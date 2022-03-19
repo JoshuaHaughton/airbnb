@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 const Hero = () => {
   return (
-    <div className='relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]'>
+    <div className='relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[650px] 2xl:h-[700px]'>
       <Image
       src="https://links.papareact.com/0fm"
       alt="Hero Image"

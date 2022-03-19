@@ -17,7 +17,7 @@ export default function Home({ exploreData, cardsData }) {
       <Header />
       <Hero />
 
-      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+      <main className="max-w-7xl mx-auto px-8 sm:px-16 mt-4">
         <section>
           <h2 className="text-4xl font-semibold py-5">
             Inspiration for your next trip

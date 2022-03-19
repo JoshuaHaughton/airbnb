@@ -17,9 +17,9 @@ const Footer = () => {
       <div className="space-y-4 text-xs text-gray-800">
         <h5 className="font-bold">Community</h5>
         <p>Accessibility</p>
-        <p>Not ta real site</p>
+        <p>Not a real site</p>
         <p>Decent remake of Airbnb</p>
-        <p>Feel free to give pointers on improvemnts :)</p>
+        <p>Feel free to give pointers on improvements :)</p>
         <p>Discord Link</p>
       </div>
 
