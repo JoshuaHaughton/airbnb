@@ -67,7 +67,7 @@ const Search = ({ searchResults }) => {
 export default Search;
 
 export async function getServerSideProps(context) {
-  const searchResults = await fetch("https://links.papareact.com/isz").then(
+  const searchResults = await fetch("https://airbnb-32bf6-default-rtdb.firebaseio.com/searchData.json").then(
     (res) => res.json(),
   );
 
