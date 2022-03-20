@@ -1,3 +1,78 @@
+# Airbnb Remake
+This Airbnb remake is a design project built in order to improve my CSS knowledge by using the framework Tailwind.css, as well as learn more about Next.js. This project helped me to understand more about the power of server-side rendering, and was a big help to improving my frontend skills.
+
+View Live HERE: [Airbnb](https://airbnb-omega-ruddy.vercel.app/)
+
+
+
+## Built With
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Next.js
+- Tailwind.css
+- Firebase Database for api
+
+
+
+## Description / Features
+- Page layouts and styling built entirely with HTML, CSS JavaScript and React.js
+- Responsive CSS on all devices
+- Calendar feature enabled when typing into search
+- Design focused app (No user auth or location checking)
+- Final app and subsequent edits connected and deployed to Vercel
+
+
+
+
+## Images
+
+
+
+### Landing
+!['Landing page of app'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/Landing.png)
+
+
+
+### User Watchlist
+!["List of all items saved to user's watchlist"](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/UserWatchlist.png)
+
+
+
+### MediaInfo
+!['Media Info Page'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MediaInfo.png)
+
+
+
+### MediaInfo Cast Section
+!['Cast Results under MediaInfo Page'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MediaInfoCast.png)
+
+
+
+### Discover Page
+!['Browse popular media'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/Discover.png)
+
+
+
+### Auth Modal
+!['Authentication modal for registering and logging in'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/AuthModal.png)
+
+
+
+### Mobile Mode
+!['List of all available vinyls'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MobileModePreview.png)
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
