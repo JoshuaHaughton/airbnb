@@ -58,7 +58,8 @@ export default function Home({ exploreData, cardsData }) {
   );
 }
 
-//Happens when client request hits server, before page data is sent back to client, then data is passed to components as props
+//Happens when app is built and deployed. Fetched data is cached to server, 
+//Preloaded for any users that make a request for faster load times. Data is passed to components as props
 export async function getStaticProps() {
   const exploreData = await fetch(
     "https://airbnb-32bf6-default-rtdb.firebaseio.com/locations.json",

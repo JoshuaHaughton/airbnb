@@ -6,6 +6,7 @@ import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
 
 const Search = ({ searchResults }) => {
+  //Get queries from url
   const router = useRouter();
   const { location, startDate, endDate, numberOfGuests } = router.query;
 
@@ -55,7 +56,6 @@ const Search = ({ searchResults }) => {
               ),
             )}
           </div>
-
         </section>
       </main>
 
@@ -66,10 +66,12 @@ const Search = ({ searchResults }) => {
 
 export default Search;
 
+//Will run async functions and rebuild the page every time the user makes a request to /search , 
+//Unlike getStaticProps which will only be rebuilt manually by the user
 export async function getServerSideProps(context) {
-  const searchResults = await fetch("https://airbnb-32bf6-default-rtdb.firebaseio.com/searchData.json").then(
-    (res) => res.json(),
-  );
+  const searchResults = await fetch(
+    "https://airbnb-32bf6-default-rtdb.firebaseio.com/searchData.json",
+  ).then((res) => res.json());
 
   return {
     props: {
