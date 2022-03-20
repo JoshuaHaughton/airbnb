@@ -20,7 +20,7 @@ View Live HERE: [Airbnb](https://airbnb-omega-ruddy.vercel.app/)
 - Page layouts and styling built entirely with HTML, CSS JavaScript and React.js
 - Responsive CSS on all devices
 - Calendar feature enabled when typing into search
-- Design focused app (No user auth or location checking)
+- Design-focused app (No user auth or location checking)
 - Final app and subsequent edits connected and deployed to Vercel
 
 
@@ -31,38 +31,27 @@ View Live HERE: [Airbnb](https://airbnb-omega-ruddy.vercel.app/)
 
 
 ### Landing
-!['Landing page of app'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/Landing.png)
+!['Landing page of app'](https://github.com/JoshuaHaughton/airbnb/blob/main/public/Landing.png)
 
 
 
-### User Watchlist
-!["List of all items saved to user's watchlist"](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/UserWatchlist.png)
+### Calendar Booking
+!['Calendar'](https://github.com/JoshuaHaughton/airbnb/blob/main/public/CalendarState.png)
 
 
 
-### MediaInfo
-!['Media Info Page'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MediaInfo.png)
+### Search Results
+!['Search Results Page'](https://github.com/JoshuaHaughton/airbnb/blob/main/public/SearchResults.png)
 
 
 
-### MediaInfo Cast Section
-!['Cast Results under MediaInfo Page'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MediaInfoCast.png)
-
-
-
-### Discover Page
-!['Browse popular media'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/Discover.png)
-
-
-
-### Auth Modal
-!['Authentication modal for registering and logging in'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/AuthModal.png)
+### Footer
+!['Footer'](https://github.com/JoshuaHaughton/airbnb/blob/main/public/Footer.png)
 
 
 
 ### Mobile Mode
-!['List of all available vinyls'](https://github.com/JoshuaHaughton/watchlist/blob/main/client/docs/MobileModePreview.png)
-
+!['Mobile Responsiveness'](https://github.com/JoshuaHaughton/airbnb/blob/main/public/MobileMode.png)
 
 
 
