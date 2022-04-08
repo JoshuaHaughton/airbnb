@@ -3,7 +3,7 @@ import React from 'react'
 import { HeartIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 
-const InfoCard = ({ img, location, title, description, star, price, total }) => {
+const InfoCard = ({ img, location, city, title, description, star, price, total }) => {
 
   return (
     <div className='flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-md transition duration-200 ease-out first:border-t'>
@@ -13,7 +13,7 @@ const InfoCard = ({ img, location, title, description, star, price, total }) => 
 
       <div className='flex flex-col flex-grow pl-5'>
         <div className='flex justify-between'>
-          <p>{location}</p>
+          <p>{`${location} ${city}`}</p>
           <HeartIcon className='h-7 cursor-pointer' />
         </div>
         <h4 className='text-xl'>{title}</h4>

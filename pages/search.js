@@ -18,7 +18,7 @@ const Search = ({ searchResults }) => {
   return (
     <div>
       <Header
-        placeholder={`${location} | ${range} | ${numberOfGuests} guests`}
+        placeholder={`${location} | ${range} | ${numberOfGuests} ${numberOfGuests > 1 ? 'guests' : 'guest'}`}
       />
 
       <main className="flex">
@@ -42,11 +42,12 @@ const Search = ({ searchResults }) => {
 
           <div className="flex flex-col">
             {searchResults.map(
-              ({ img, location, title, description, star, price, total }) => (
+              ({ img, title, location: locationData, description, star, price, total }) => (
                 <InfoCard
                   key={img}
                   img={img}
-                  location={location}
+                  location={locationData}
+                  city={location}
                   title={title}
                   star={star}
                   description={description}
